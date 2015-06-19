@@ -2,7 +2,7 @@
 import requests
 import re
 
-WORDS = ["THREE ONE TWO", "ONE", "TWO", "THREE"]
+WORDS = ["THREE ONE TWO", "ONE", "TWO", "THREE", "THREE-ONE-TWO", "3-1-2"]
 
 def handle(text, mic, profile):
 
@@ -18,4 +18,4 @@ def isValid(text):
         Arguments:
         text -- user-input, typically transcribed speech
     """
-    return bool(re.search(r'\bthree\b|\bone\b|\btwo\b', text, re.IGNORECASE))
+    return bool(re.search(r'\bthree\b|\bone\b|\btwo\b|\bthree\-one\-two\b|\b3\-2\-1\b', text, re.IGNORECASE))
