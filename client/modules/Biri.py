@@ -21,10 +21,8 @@ def handle(text, mic, profile):
     slot = random.randint(2, 9)
     print slot
 
-    """
     response = requests.post('http://4.35.101.62:2020/vendSlot/' + str(slot))
     print response
-    """
 
 def isValid(text):
     """
