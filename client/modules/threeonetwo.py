@@ -2,7 +2,7 @@
 import requests
 import re
 
-WORDS = ["THREE ONE TWO"]
+WORDS = ["THREE ONE TWO", "ONE", "TWO", "THREE"]
 
 def handle(text, mic, profile):
 
