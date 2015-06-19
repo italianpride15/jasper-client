@@ -3,7 +3,7 @@ import requests
 import re
 import random
 
-WORDS = ["BEER"]
+WORDS = ["BEER", "BEING"]
 
 def handle(text, mic, profile):
     """
@@ -33,4 +33,4 @@ def isValid(text):
         Arguments:
         text -- user-input, typically transcribed speech
     """
-    return bool(re.search(r'\bbeer\b', text, re.IGNORECASE))
+    return bool(re.search(r'\bbeer\b|\bbeing\b', text, re.IGNORECASE))
