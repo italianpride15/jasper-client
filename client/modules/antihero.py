@@ -2,7 +2,7 @@
 import requests
 import re
 
-WORDS = ["ANTI HERO", "ANTIHERO", "ANTI", "HERO", "AUNTIE"]
+WORDS = ["ANTI HERO", "ANTIHERO", "ANTI", "HERO", "AUNTIE", "ANTI-HERO"]
 
 def handle(text, mic, profile):
 
@@ -18,4 +18,4 @@ def isValid(text):
         Arguments:
         text -- user-input, typically transcribed speech
     """
-    return bool(re.search(r'\bantihero\b|\bhero\b|\banti\b|\baunty\b|\bauntie\b', text, re.IGNORECASE))
+    return bool(re.search(r'\bantihero\b|\bhero\b|\banti\b|\baunty\b|\bauntie\b|\banti-hero\b', text, re.IGNORECASE))
