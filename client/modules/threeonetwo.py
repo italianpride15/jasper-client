@@ -18,4 +18,4 @@ def isValid(text):
         Arguments:
         text -- user-input, typically transcribed speech
     """
-    return bool(re.search(r'\bthree\b|\bone\b|\btwo\b', text, re.IGNORECASE))
+    return bool(re.search(r'\bthree\b|\bone\b|\btwo\b|\bthree\-one\-two\b|\b3\-2\-1\b', text, re.IGNORECASE))
