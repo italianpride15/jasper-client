@@ -1,5 +1,6 @@
 # -*- coding: utf-8-*-
 import requests
+import re
 import random
 
 WORDS = ["BEER"]
