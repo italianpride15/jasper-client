@@ -178,10 +178,10 @@ class Mic:
             # check if PERSONA was said
             transcribed = self.passive_stt_engine.transcribe(f)
 
-        if any(PERSONA in phrase for phrase in transcribed):
-            return (THRESHOLD, PERSONA)
+        #if any(PERSONA in phrase for phrase in transcribed):
+          #  return (THRESHOLD, PERSONA)
 
-        return (False, transcribed)
+        return (THRESHOLD, transcribed)
 
     def activeListen(self, THRESHOLD=None, LISTEN=True, MUSIC=False):
         """
